@@ -1,10 +1,11 @@
-package codingTest.TestCode_Gooroomee.Test;
+package codingTest.TestCode_Codility;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
-// odd_occurrences_in_array
-// https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/
+// Lesson 3. Time Complexity
+// FrogJmp
+// https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
 public class Sol_Codility_P5 {
 
 	public int solution(int X, int Y, int D) {

@@ -1,8 +1,8 @@
-package codingTest.TestCode_Gooroomee.Test;
-import java.io.*;
-import java.util.*;
-import java.util.stream.Collectors;
+package codingTest.TestCode_Codility;
 
+import java.util.*;
+
+// Lesson 2. Arrays
 // odd_occurrences_in_array
 // https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/start/
 public class Sol_Codility_P3 {

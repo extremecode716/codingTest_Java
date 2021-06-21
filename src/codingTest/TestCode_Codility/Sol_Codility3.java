@@ -1,8 +1,8 @@
-package codingTest.TestCode_Gooroomee.Test;
+package codingTest.TestCode_Codility;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
-
+//요3
 public class Sol_Codility3 {
 	public int solution(int N) {
 		N += 1;

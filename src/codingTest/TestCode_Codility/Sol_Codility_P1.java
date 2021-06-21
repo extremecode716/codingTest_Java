@@ -1,5 +1,7 @@
-package codingTest.TestCode_Gooroomee.Test;
+package codingTest.TestCode_Codility;
 import java.util.*;
+
+// Lesson 1. iterations
 // binary gap
 // https://app.codility.com/programmers/lessons/1-iterations/binary_gap/start/
 public class Sol_Codility_P1 {

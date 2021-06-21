@@ -1,8 +1,9 @@
-package codingTest.TestCode_Gooroomee.Test;
+package codingTest.TestCode_Codility;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+// Lesson 3. Time Complexity
 // PermMissingElem
 // Sol_Codility_P4.java
 public class Sol_Codility_P4 {

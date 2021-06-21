@@ -1,4 +1,4 @@
-package codingTest.TestCode_Gooroomee.Test;
+package codingTest.TestCode_Codility;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;

@@ -1,8 +1,9 @@
-package codingTest.TestCode_Gooroomee.Test;
+package codingTest.TestCode_Codility;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
+// Lesson 16. Greedy algorithms
 // MaxNonoverlappingSegments
 // https://app.codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/
 public class Sol_Codility_P6 {
