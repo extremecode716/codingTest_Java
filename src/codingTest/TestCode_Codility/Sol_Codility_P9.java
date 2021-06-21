@@ -10,17 +10,29 @@ public class Sol_Codility_P9 {
 		int len = A.length;
 		int[] counters = new int[N];
 		
-		int curMaxCount = 0;
+		int maxCount = 0;
+		int tmpMaxCount = 0;
 		for(int i = 0; i < len; ++i) {
 			if(A[i] == N + 1) {
-				for(int j = 0; j < N; ++j) {
-					counters[j] = curMaxCount;
-				}
+				maxCount = tmpMaxCount;
+				continue;
 			}else if(A[i] <= N && A[i] >= 1) {
-				counters[A[i] - 1] = counters[A[i] - 1] + 1;
-				curMaxCount = Math.max(curMaxCount, counters[A[i] - 1]);
+				if(counters[A[i] - 1] < maxCount) {
+					counters[A[i] - 1] = maxCount;
+				}
+				
+				++counters[A[i] - 1];
+				
+				if(counters[A[i] - 1] > tmpMaxCount) {
+					tmpMaxCount = counters[A[i] - 1];
+				}
 			}
-			
+		}
+		
+		for(int i = 0; i < N; ++i) {
+			if(counters[i] < maxCount) {
+				counters[i] = maxCount;
+			}
 		}
 
 		return counters;
