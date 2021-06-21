@@ -1,7 +1,7 @@
 package codingTest.TestCode_Codility;
-import java.io.*;
+
 import java.util.*;
-import java.util.stream.Collectors;
+// Lesson 2. Arrays
 // cyclicRotation
 // https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/start/
 public class Sol_Codility_P2 {

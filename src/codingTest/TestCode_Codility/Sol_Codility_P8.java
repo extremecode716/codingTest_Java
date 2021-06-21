@@ -1,7 +1,5 @@
 package codingTest.TestCode_Codility;
-import java.io.*;
 import java.util.*;
-import java.util.stream.Collectors;
 
 // Lesson 4. counting Elements
 // FrogRiverOne
