@@ -14,6 +14,7 @@ public class Sol_Programmers_K2 {
             }
         }
 
+        int[] result = new int[4];
         // d:1 아래, d:2 위, d:3 우, d:4 좌
         for (int i = 0; i < swipes.length; ++i) {
             int d = swipes[i][0];
@@ -26,6 +27,7 @@ public class Sol_Programmers_K2 {
                 case 1://아래
                     for (int x = startX; x <= endX; ++x) {
                         tmp = table[endY][x];
+                        result[i] += tmp;
                         for (int c = endY - 1; c >= startY; --c) {
                             table[c + 1][x] = table[c][x];
                         }
@@ -35,6 +37,7 @@ public class Sol_Programmers_K2 {
                 case 2://위
                     for (int x = startX; x <= endX; ++x) {
                         tmp = table[startY][x];
+                        result[i] += tmp;
                         for (int c = startY + 1; c <= endY; ++c) {
                             table[c - 1][x] = table[c][x];
                         }
@@ -44,6 +47,7 @@ public class Sol_Programmers_K2 {
                 case 3://우
                     for (int y = startY; y <= endY; ++y) {
                         tmp = table[y][endX];
+                        result[i] += tmp;
                         for (int c = endX - 1; c >= startX; --c) {
                             table[y][c + 1] = table[y][c];
                         }
@@ -53,6 +57,7 @@ public class Sol_Programmers_K2 {
                 case 4://좌
                     for (int y = startY; y <= endY; ++y) {
                         tmp = table[y][startX];
+                        result[i] += tmp;
                         for (int c = startX + 1; c <= endX; ++c) {
                             table[y][c - 1] = table[y][c];
                         }
@@ -62,18 +67,13 @@ public class Sol_Programmers_K2 {
             }
         }
 
-        int[] result = new int[rows];
-        for (int i = 1; i <= rows; ++i) {
-            for (int j = 1; j <= columns; ++j) {
-                result[i - 1] += table[i][j];
-            }
-        }
-
         return result;
     }
 
     public static void main(String[] args) {
         Sol_Programmers_K2 sol = new Sol_Programmers_K2();
         System.out.println(Arrays.toString(sol.solution(4, 3, new int[][]{{1, 1, 2, 4, 3}, {3, 2, 1, 2, 3}, {4, 1, 1, 4, 3}, {2, 2, 1, 3, 3}})));
+        System.out.println(Arrays.toString(sol.solution(2, 4, new int[][]{{3, 1, 2, 2, 4}, {3, 1, 2, 2, 4}, {4, 2, 1, 2, 3}, {1, 1, 1, 2, 3}})));
+        System.out.println(Arrays.toString(sol.solution(2, 2, new int[][]{{3, 1, 1, 1, 2}, {1, 1, 2, 2, 2}, {4, 2, 1, 2, 2}, {2, 1, 1, 2, 1}})));
     }
 }
