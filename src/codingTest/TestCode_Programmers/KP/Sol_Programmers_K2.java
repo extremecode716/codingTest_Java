@@ -14,7 +14,7 @@ public class Sol_Programmers_K2 {
             }
         }
 
-        int[] result = new int[4];
+        int[] result = new int[swipes.length];
         // d:1 아래, d:2 위, d:3 우, d:4 좌
         for (int i = 0; i < swipes.length; ++i) {
             int d = swipes[i][0];
