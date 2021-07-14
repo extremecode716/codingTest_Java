@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 // 수정할 것
-//사3
+// 사3
 public class Sol3 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

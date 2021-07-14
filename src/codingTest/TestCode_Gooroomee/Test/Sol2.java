@@ -2,7 +2,7 @@ package codingTest.TestCode_Gooroomee.Test;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
-//사2
+// 사2
 public class Sol2 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static List<Integer> resultlist = new ArrayList<>();
