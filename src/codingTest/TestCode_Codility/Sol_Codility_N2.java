@@ -1,6 +1,6 @@
 package codingTest.TestCode_Codility;
 import java.util.*;
-// 네1
+// 네2
 public class Sol_Codility_N2 {
 
 	public int solution(int[] A, int X) {
