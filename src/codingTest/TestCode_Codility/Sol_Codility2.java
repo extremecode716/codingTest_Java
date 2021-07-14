@@ -1,6 +1,6 @@
 package codingTest.TestCode_Codility;
 import java.util.*;
-//요2
+// 요2
 public class Sol_Codility2 {
 	public String solution(String S) {
 		int MAX_LEN = 256;
